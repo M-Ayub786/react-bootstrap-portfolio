@@ -80,7 +80,7 @@ const App = () => {
       <header
         className="text-white text-center mb-4"
         style={{
-          backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg_OonbJqgLLBHppLRL9v_TMYIIEv7N5lEO1yThFEQa6r8wuo6Oua1MkM&s')`,
+          backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAWXHhwZ0s2f6eJ6Yy3ipo9e51rlZ6fWeuw1s7rWdKP7Q44W_kbgB6K5Q&s  ')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
