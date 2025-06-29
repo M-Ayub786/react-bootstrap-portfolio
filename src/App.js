@@ -80,7 +80,7 @@ const App = () => {
       <header
         className="text-white text-center mb-4"
         style={{
-          backgroundImage: `url('/working-header.jpg')`,
+          backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg_OonbJqgLLBHppLRL9v_TMYIIEv7N5lEO1yThFEQa6r8wuo6Oua1MkM&s')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -105,7 +105,7 @@ const App = () => {
             in React, Laravel, and Node.js. I specialize in crafting responsive web applications,
             modern UI/UX, and backend integrations for small businesses and startups.
             <br /><br />
-            My work reflects reliability, performance, and clean code. I'm currently working with international clients from the UK, and always ready for the next challenge!
+            {/* My work reflects reliability, performance, and clean code. I'm currently working with international clients from the UK, and always ready for the next challenge! */}
           </p>
         </Card.Body>
       </Card>
@@ -114,55 +114,55 @@ const App = () => {
 </Container>
 
 
-     {/* Projects */}
-<Container className="mb-5">
-  <h3 className="text-center mb-4">🚀 Projects</h3>
-  <Row className="g-4">
-    {projects.map((project, idx) => (
-      <Col key={idx} xs={12} md={6}>
-        <Card className="h-100 shadow-sm border-0 rounded-4 project-card">
-          <Card.Body>
-            <Card.Title className="mb-2 fw-bold fs-5">
-              {project.title}
-              <div className="text-muted small fw-normal">{project.summary}</div>
-            </Card.Title>
-            <Card.Text className="text-secondary mb-3" style={{ fontSize: "0.95rem" }}>
-              {project.description}
-            </Card.Text>
-            <div className="mb-3">
-              <span className="badge bg-secondary">{project.tech}</span>
-            </div>
-          </Card.Body>
-          <Card.Footer className="bg-white border-0 d-flex justify-content-between">
-            <Button
-              variant="primary"
-              href={project.live || "#"}
-              target="_blank"
-              className="rounded-pill px-3"
-              disabled={!project.live}
-            >
-              <FaExternalLinkAlt className="me-1" /> Live
-            </Button>
-            <Button
-              variant="dark"
-              href={project.github || "#"}
-              target="_blank"
-              className="rounded-pill px-3"
-              disabled={!project.github}
-            >
-              <FaGithub className="me-1" /> GitHub
-            </Button>
-          </Card.Footer>
-        </Card>
-      </Col>
-    ))}
-  </Row>
-</Container>
+    {/* Projects */}
+ <Container className="mb-5">
+   <h3 className="text-center mb-4">Projects</h3>
+   <Row className="g-4">
+     {projects.map((project, idx) => (
+       <Col key={idx} xs={12} md={6}>
+         <Card className="h-100 shadow-sm border-0 rounded-4 project-card bg-white">
+           <Card.Body>
+             <Card.Title className="mb-2 fw-bold fs-5">
+               {project.title}
+               <div className="text-muted small fw-normal">{project.summary}</div>
+             </Card.Title>
+             <Card.Text className="text-secondary mb-3" style={{ fontSize: "0.95rem" }}>
+               {project.description}
+             </Card.Text>
+             <div className="mb-3">
+               <span className="badge bg-secondary">{project.tech}</span>
+             </div>
+           </Card.Body>
+           <Card.Footer className="bg-white border-0 d-flex justify-content-between">
+             <Button
+               variant="primary"
+               href={project.live || "#"}
+               target="_blank"
+               className="rounded-pill px-3"
+               disabled={!project.live}
+             >
+               <FaExternalLinkAlt className="me-1" /> Live
+             </Button>
+             <Button
+               variant="dark"
+               href={project.github || "#"}
+               target="_blank"
+               className="rounded-pill px-3"
+               disabled={!project.github}
+             >
+               <FaGithub className="me-1" /> GitHub
+             </Button>
+           </Card.Footer>
+         </Card>
+       </Col>
+     ))}
+   </Row>
+ </Container>
 
 
       {/* Contact */}
       <Container className="mb-5">
-        <h3 className="text-center mb-4">📬 Contact Me</h3>
+        <h3 className="text-center mb-4">Contact Me</h3>
         <Row className="justify-content-center">
           <Col md={6}>
             <Card className="p-4 shadow-sm bg-light border-0 rounded-4">
@@ -246,7 +246,7 @@ const App = () => {
       </footer>
 
       {/* Hover Card Style */}
-     <style>{`
+   <style>{`
   .project-card {
     transition: all 0.3s ease;
   }
